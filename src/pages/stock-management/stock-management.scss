@@ -1,3 +1,13 @@
 page-stock-management {
+	ion-item.product-info {
+		background-color: $color5;
 
+		span:not(.button-inner) {
+			font-size: 1.8rem;
+		}
+	}
+
+	ion-item.product-info.stock-safe {
+		background-color: $color1;
+	}
 }
