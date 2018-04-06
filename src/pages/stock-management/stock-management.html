@@ -5,7 +5,7 @@
 			[ngClass]="{ 'stock-safe': p.stockSafe}">
 			<span item-start>{{ p.label }}</span>
 			<span> : </span>
-			<span>{{ p.stock }}</span>
+			<span>{{ p.stock }} produits</span>
 			<button ion-fab mini item-end (click)="updateStock(p, 1)">-1</button>
 			<button ion-fab mini item-end (click)="updateStock(p, 10)">-10</button>
 		</ion-item>

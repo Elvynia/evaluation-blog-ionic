@@ -1,4 +1,26 @@
 <market-header title="Gestion des produits"></market-header>
 <ion-content padding>
-
+	<form (ngSubmit)="create(form)" #form="ngForm">
+		<ion-item no-lines>
+			<label for="pId" item-start>Identifiant :</label>
+			<input id="pId" name="pId" required
+				[(ngModel)]="product.id" item-end>
+		</ion-item>
+		<ion-item no-lines>
+			<label for="pLabel" item-start>Libellé :</label>
+			<input id="pLabel" name="pLabel" required
+				[(ngModel)]="product.label" item-end>
+		</ion-item>
+		<ion-item no-lines>
+			<label for="pStock" item-start>Stock :</label>
+			<input id="pStock" name="pStock" type="number" required
+				[(ngModel)]="product.stock" item-end>
+		</ion-item>
+		<ion-item no-lines>
+			<label for="pThreshold" item-start>Seuil :</label>
+			<input id="pThreshold" name="pThreshold" type="number" required
+				[(ngModel)]="product.threshold" item-end>
+		</ion-item>
+		<button ion-button full>Valider</button>
+	</form>
 </ion-content>

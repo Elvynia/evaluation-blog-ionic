@@ -19,7 +19,7 @@ export class StockManagementPage {
 	ngOnInit() {
 		this.refresh();
 		// Utilisé pour debug/test.
-		this.products.push(new Product('00001', 'Chips barbecue', 150, 40));
+		// this.products.push(new Product('00001', 'Chips barbecue', 150, 40));
 	}
 
 	updateStock(product: Product, quantity: number) {
