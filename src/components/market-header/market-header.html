@@ -1,0 +1,9 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title *ngIf="title">{{ title }}</ion-title>
+		<div class="menu">
+			<a href="#" (click)="navigate(true)">Gestion des stocks</a>
+			<a href="#" (click)="navigate(false)">Gestion des produits</a>
+		</div>
+	</ion-navbar>
+</ion-header>
